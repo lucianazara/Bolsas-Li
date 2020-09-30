@@ -1,0 +1,688 @@
+*{
+    font-family: 'Roboto Slab', serif;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+   
+}
+
+
+header {
+    width: 1200px;
+    height: 180px;
+    margin-bottom: 10px;
+    clear: both; 
+
+}
+
+#logo {
+float: left;
+height: 170px;
+margin: 0;
+}
+
+#barra_nav {
+    float: right;
+    height: 170px;
+
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+nav ul li {
+   display: inline-block;
+   float: right;
+    
+}
+
+#link {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: salmon;
+    background-color: black;
+}
+
+a:link {
+    line-height: 200px;
+
+}
+
+section {
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    width: 1200px;
+    height: 600px;
+}
+h1 {
+    font-size: 5rem;
+    font-family: 'Sacramento', cursive;
+    text-align: left;
+
+}
+.principal {
+    width: 1200px;
+    height: 600px;
+    display:flex;
+    flex-direction: row;
+   justify-content: space-between;
+   line-height: 2rem;
+   padding: 2rem;
+}
+p {
+    font-size: 2em;
+    width: 45%;
+   padding: 1rem;
+  
+}
+.carrito {
+    align-items: flex-start;
+}
+.carrito:hover {
+    color:salmon;
+}
+
+
+#bolsas img{
+    width: 300px;
+    height: auto;
+    -webkit-filter: drop-shadow(1px 1px 1px #bab8b8);
+    filter: drop-shadow(1px 1px 1px #bab8b8);
+    display: grid;
+    
+}
+
+.bolsa {
+    transition: transform .2s;
+    
+}
+
+.bolsa:hover {
+    transform: scale(1.2);
+}
+
+.bolsas {
+    width: 1200px;
+}
+.bolsas1 {
+    width: 300px;
+    height: auto;
+     display: grid;
+     gap: 20px;
+     grid-template-columns: repeat(3, 1fr);
+}
+/*SECCIÓN DEL FOOTER */
+ footer {
+        width: 1200px;
+        height: 200px;
+        background-color: black;
+        justify-content: center;
+        grid-template-rows: minmax(100%, 1fr)
+        padding: .5em; 
+        padding-top: 4rem;
+        gap: .5em; 
+        text-align: center;
+       box-sizing: border-box;
+
+}
+
+
+
+
+footer h3 {
+  text-align: center;
+    color: white;
+    font-weight: bold;
+   
+}
+
+footer h3:hover {
+    color: salmon;
+    
+}
+
+
+
+.footer-icon:hover {
+    color: salmon;
+}
+
+.icons {
+align-items: center;
+color: #bab8b8;
+
+
+}
+
+.icons ul{
+    list-style: none;
+}
+
+.icons li {
+    display: inline-block;
+    box-sizing: border-box;
+}
+.footer-icon {
+    display: inline-block;
+    line-height: 2em;
+} 
+
+
+
+   
+
+
+
+/* MEDIA QUERY TABLET */
+
+@media all and (max-width: 1023px) {
+
+ 
+header {
+    width: 100%;
+    height: 500px;
+    display: grid;
+
+   
+
+} 
+
+
+    
+    #logo {
+    float: none;
+    height: 170px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    padding-bottom: 2rem;
+    }
+    
+    #barra_nav {
+        float: none;
+        height: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: grid;
+        padding-bottom: 1rem;
+        padding-top: .5rem;
+        min-width: 90%;
+        background-color: black;
+        width: 2rem;
+        
+
+    }
+
+    nav ul {
+        list-style: none;
+    
+    }
+    
+    nav ul li {
+       float: none;
+       align-items: center;
+        
+    }
+    
+    #link {
+        text-decoration: none;
+   
+    }
+    
+    nav ul li a {
+        color: black;
+        font-weight: bold;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        min-width: 90%;
+        height: 2rem;
+        width: 4rem;
+        margin: auto;
+        padding-top: 1rem;
+        grid-template-columns: repeat(1fr, 4);
+
+
+    }
+    
+    nav ul li a:hover{
+        color: salmon;
+        background-color: black;
+        text-align: center;
+    }
+    
+    a:link {
+        line-height: 6rem;
+    
+    }
+
+/* SECCION PRINCIPAL*/
+    
+    section {
+        background-image: url(img/fondo.jpg);
+        background-size: cover;
+        width: 90%;
+        height: 50%;
+    }
+ 
+    .principal {
+        width: 90%;
+        height: auto;
+        display:flex;
+        flex-direction: row;
+       justify-content: center;
+       line-height: .5rem;
+       padding: .5rem;
+       display: none;
+    }
+    p {
+        font-size: 2rem;
+        width: 90%;
+        line-height: .5rem;
+      
+    }
+    .carrito {
+        align-items: flex-start;
+    }
+    .carrito:hover {
+        color:salmon;
+    }
+    
+    #bolsas-ti {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: bold;
+    }
+    
+    #bolsas img{
+        width: 300px;
+        height: auto;
+        -webkit-filter: drop-shadow(1px 1px 1px #bab8b8);
+        filter: drop-shadow(1px 1px 1px #bab8b8);
+    }
+    
+    .bolsa {
+        transition: transform .2s;
+        
+    }
+    
+    .bolsa:hover {
+        transform: scale(1.1);
+    }
+    
+    .bolsas {
+        width: 90%;
+        padding-bottom: 2rem;
+
+       
+    }
+    .bolsas1 {
+         width: 300px;
+         height: auto;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 20px;
+    
+     
+    }
+    
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: black;
+       
+        justify-content: center;
+        grid-template-rows: minmax(100%, 1fr)
+        padding: 2em; 
+        gap: 1em; 
+        text-align: center;
+    
+        
+    }
+    
+  
+    
+    
+    footer h3 {
+      text-align: center;
+        color: white;
+        font-weight: bold;
+       
+    }
+    
+    footer h3:hover {
+        color: salmon;
+        
+    }
+    
+    
+    
+    .footer-icon:hover {
+        color: salmon;
+    }
+    
+    .icons {
+    align-items: center;
+    color: #bab8b8;
+    
+    
+    }
+    
+    .icons ul{
+        list-style: none;
+    }
+    
+    .icons li {
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    .footer-icon {
+        display: inline-block;
+        line-height: 2em;
+    }
+    
+
+   
+
+
+} /*llave de la media query*/
+
+/* MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+    header {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 0px;
+       
+    
+    } 
+    
+    
+        
+        #logo {
+        float: none;
+        height: 170px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        align-items: center;
+        }
+        
+        #barra_nav {
+            float: none;
+            height: auto;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            display: flex;
+            padding-bottom: .5px;
+            padding-top: .5px;
+    
+        }
+    
+        nav ul {
+            list-style: none;
+        
+        }
+        
+        nav ul li {
+           display: block;
+           float: none;
+           flex-direction: none;
+           flex-wrap: none;
+           align-items: center;
+
+            
+        }
+        
+        #link {
+            text-decoration: none;
+            padding: 0.1rem;
+        }
+        
+        nav ul li a {
+            color: black;
+            font-weight: bold;
+            box-sizing: border-box;
+            text-align: center; 
+            margin:.5rem; 
+            display: block; /
+            background-color: black;
+            width: 26rem;
+            height: 2rem;
+            vertical-align: center;
+            padding: 1rem;
+           
+        }
+        
+        nav ul li a:hover{
+            color: salmon;
+            background-color: black;
+            text-align: center;
+        }
+        
+        a:link {
+            line-height: 0px;
+        
+        }
+    
+    /* SECCION PRINCIPAL*/
+        
+        section {
+            background-image: url(img/fondo.jpg);
+            background-size: cover;
+            width: 90%;
+            height: auto;
+        
+        }
+     
+        .principal {
+            width: 90%;
+            height: 200px;
+            display:flex;
+            flex-direction: row;
+           justify-content: center;
+           line-height: 1rem;
+           padding: .5rem;
+           display: none;
+        }
+        p {
+            font-size: 1rem;
+            width: 90%;
+           padding: .5rem;
+
+          
+        }
+        .carrito {
+            align-items: flex-start;
+        }
+        .carrito:hover {
+            color:salmon;
+        }
+        
+        
+        #bolsas img{
+            width: 300px;
+            height: 200px;
+            -webkit-filter: drop-shadow(1px 1px 1px #bab8b8);
+            filter: drop-shadow(1px 1px 1px #bab8b8);
+        }
+        
+        .bolsa {
+            transition: transform .2s;
+            
+        }
+        
+        .bolsa:hover {
+            transform: scale(1.1);
+        }
+        
+        .bolsas {
+            width: 940px;
+            padding-bottom: .5rem;
+    
+           
+        }
+        .bolsas1 {
+             width: 300px;
+             height: auto;
+             display: grid;
+             grid-template-columns: repeat(1, 1fr);
+         
+        }
+       
+        footer {
+            width: 100%;
+            height: auto;
+            background-color: black;
+            justify-content: center;
+            grid-template-rows: minmax(100%, 1fr)
+            padding: .5em; 
+            gap: .5em; 
+            text-align: center;
+        
+            
+        }
+        
+        
+        
+        footer h3 {
+          text-align: center;
+            color: white;
+            font-weight: bold;
+           
+        }
+        
+        footer h3:hover {
+            color: salmon;
+            
+        }
+        
+        
+        
+        .footer-icon:hover {
+            color: salmon;
+        }
+        
+        .icons {
+        align-items: center;
+        color: #bab8b8;
+        
+        
+        }
+        
+        .icons ul{
+            list-style: none;
+        }
+        
+        .icons li {
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        .footer-icon {
+            line-height: .5em;
+            display: inline-block;
+            padding: 1rem;
+           
+          
+   
+         
+        } 
+        
+
+} /*fin de media query*/
+
+/* SECCIÓN CONTACTO  */
+
+.formulario {
+    float: left;
+    width: 50%;
+    margin: auto;
+    color: #999;
+}
+.caja-1{
+	width: 250px;
+	height: 40px;
+	margin: 20px 20px;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.caja-2 {
+    width: 545px;
+    height: 100px;
+    margin: 20px 20px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.correr {
+    margin: 20px 20px;
+    padding: 10px;
+}
+
+.formu-ti {
+    margin: 0px 20px;
+    color:black;
+}
+
+.datos-contacto {
+    list-style: none;
+    text-align: center;
+}
+.datos-contacto li{
+	color: #444;
+	padding-bottom: 5px;
+}
+.datos-contacto li i{
+	color: #85c34a;
+	font-size: 60px;
+}
+
+iframe {
+    float: right;
+    width: 40%;
+}
+
+h2, h3 {
+    font-family: 'Secular One', sans-serif;
+}
+
+.comprar-row {
+    display: inline-block;
+    width: 1200px;
+
+}
+.img-comprar {
+    width: 300px;
+    grid-template-columns: repeat(4fr);
+    align-items: center;
+       -webkit-filter: drop-shadow(1px 1px 1px #bab8b8);
+    filter: drop-shadow(1px 1px 1px #bab8b8);
+}
+
+.about-texto {
+    width: 800px;
+    
+}
+
+    
+/* SECCIÓN PRODUCTOS  */
+
+.productos {
+    align-items: center;
+    padding: 3rem;
+}
+
